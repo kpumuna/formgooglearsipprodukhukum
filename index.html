@@ -77,6 +77,16 @@
     .header-card p { font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.7; }
     .req-note { font-size: 12px; color: rgba(255,255,255,0.45); margin-top: 12px; }
     .req-note span { color: #ffaaaa; }
+    .btn-arsip {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: transparent;
+      border: 1.5px solid var(--gold);
+      color: var(--gold);
+      font-family: 'IBM Plex Sans', sans-serif; font-size: 12.5px; font-weight: 500;
+      padding: 9px 18px; border-radius: 99px; cursor: pointer;
+      transition: all var(--tr); text-decoration: none; letter-spacing: .3px;
+    }
+    .btn-arsip:hover { background: var(--gold); color: #fff; transform: translateY(-1px); box-shadow: 0 6px 16px rgba(184,134,11,.3); }
 
     /* PROGRESS */
     .progress-wrap { margin-bottom: 20px; animation: up .5s ease .05s both; }
@@ -283,8 +293,10 @@
     </div>
     <h1>Input Indeks Arsip<br/>Dokumen Baru</h1>
     <p>Isi formulir lengkap. Dokumen akan otomatis tercatat di Google Sheets dan tersimpan di folder Google Drive sesuai jenis &amp; periode.</p>
-    <div class="req-note"><span>*</span> Wajib diisi</div>
-     <a class="btn-arsip" onclick="alert('Maaf bu, linknya besok aja ya \uD83D\uDE4F')">&#128194; Lihat data Arsip</a>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-top:12px;flex-wrap:wrap;gap:8px;">
+      <div class="req-note" style="margin-top:0;"><span>*</span> Wajib diisi</div>
+      <a class="btn-arsip" onclick="alert('Maaf bu, linknya besok aja ya \uD83D\uDE4F')">&#128194; Lihat data Arsip</a>
+    </div>
   </div>
 
   <!-- PROGRESS -->
